@@ -18,7 +18,7 @@ function interval(){
    }
    isActif= true
    intervalId = setInterval(() => {
-        const random = Math.floor(Math.random() * colors.length)
+        const random = Math.floor(Math.random() * colors.length-1)
         bodyEl.style.backgroundColor  = colors[random]
         console.log(bodyEl);
     }, 1000);
